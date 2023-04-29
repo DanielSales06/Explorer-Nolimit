@@ -55,14 +55,14 @@ header img:first-child {
 }
 
 header img:last-child {
-  width: 5.8rem;
+  width: clamp(5rem, 6vw, 5.8rem);
 
   margin-bottom: 9.3rem;
 }
 
 header h1 {
   font-weight: 900;
-  font-size: 3.2rem;
+  font-size: clamp(3.2rem, 4vw, 5.5rem);
   line-height: 4rem;
   text-align: center;
   
@@ -73,7 +73,7 @@ header h1 {
 
 header p {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: clamp(2rem, 2vw, 3rem);
   line-height: 2.5rem;
 
   text-align: center;
@@ -111,12 +111,12 @@ main {
 }
 
 .card img {
-  width: 8rem;
+  width: clamp(7rem, 5vw ,8rem);
 }
 
 .card h1 {
   font-weight: 900;
-  font-size: 2.921rem;
+  font-size: clamp(2.5rem, 5vw, 2.921rem);
   line-height: 3.7rem;
 
   color: var(--PINK);
@@ -126,7 +126,7 @@ main {
 
 .card p {
   font-weight: 600;
-  font-size: 1.604rem;
+  font-size: clamp(1.4rem, 5vw, 1.604rem);
   line-height: 2rem;
 
   color: var(--BLUE);
@@ -251,7 +251,7 @@ footer h1 {
 
     max-width: 121.8rem;
     
-    padding: 0 1rem 5rem;
+    padding: 0 3.2rem 5rem;
   }
   
   header .wrapper {
@@ -261,8 +261,7 @@ footer h1 {
   }
   
   header img:first-child {
-    width: 50rem;
-    height: 52rem;
+    width: 57rem;
   
     margin-bottom: 0;
   }
@@ -272,19 +271,19 @@ footer h1 {
   }
   
   header h1 {
-    font-size: 5.5rem;
-    line-height: 7.3rem;
+    line-height: 5rem;
 
     text-align: start;
+
+    margin-bottom: .8rem;
   }
   
   header p {
-    font-size: 3rem;
-    line-height: 4rem;
+    line-height: 3rem;
 
     text-align: start;
   
-    margin-bottom: 17.9rem;
+    margin-bottom: 15rem;
   }
 
   main {
@@ -296,42 +295,13 @@ footer h1 {
     margin: auto;
   
     display: flex;
-    gap: 6rem;
+    gap: 5rem;
   
     padding: 5.3rem 0;
   }
   
   .card {
-    padding: 2.648rem 5.9rem 2.648rem 2.648rem;
-  
-    width: 100%;
-    height: auto;
-  
-    background: var(--WHITE);
-    box-shadow: 0px 3.31077px 13.2431px rgba(0, 0, 0, 0.25);
-    border-radius: 19.8646px;
-  }
-  
-  .card img {
-    width: 8rem;
-  }
-  
-  .card h1 {
-    font-weight: 900;
-    font-size: 2.921rem;
-    line-height: 3.7rem;
-  
-    color: var(--PINK);
-  
-    margin: 3.3rem 0 2rem;
-  }
-  
-  .card p {
-    font-weight: 600;
-    font-size: 1.604rem;
-    line-height: 2rem;
-  
-    color: var(--BLUE);
+    padding: 2.648rem;
   }
 
   section {
@@ -370,12 +340,4 @@ footer h1 {
     width: 64.4rem;
     height: 61.2rem;
   }
-}
-
-@media (min-width: 990px) {
-  header img:first-child {
-    width: 63rem;
-    height: 60rem;
-  }
-  
 }
