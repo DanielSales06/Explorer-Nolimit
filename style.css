@@ -46,6 +46,8 @@ header .wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  animation: leftCenter 500ms ease;
 }
 
 header img:first-child {
@@ -112,6 +114,8 @@ main {
 
 .card img {
   width: clamp(7rem, 5vw ,8rem);
+
+  animation: showIn 1s;
 }
 
 .card h1 {
@@ -343,3 +347,28 @@ footer h1 {
     height: 61.2rem;
   }
 }
+
+
+@keyframes leftCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
